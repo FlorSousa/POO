@@ -13,6 +13,8 @@ public class fibo {
             n1 = i >= 2 ? soma: 1;
 
         }
+        System.out.println("\nValor final de n1:"+n1);
+        System.out.println("Valor final de n2:"+n2);
     }
 
     private static void fibWhile(int max){
@@ -27,6 +29,9 @@ public class fibo {
             n1 = k >= 2 ? soma: 1;
             k++;
         }
+        System.out.println("\nValor final de n1:"+n1);
+        System.out.println("Valor final de n2:"+n2);
+
     }
 
     private static void fibDoWhile(int max){
@@ -41,6 +46,8 @@ public class fibo {
             n1 = k >= 2 ? soma: 1;
             k++;
         }while(k<max);
+        System.out.println("\nValor final de n1:"+n1);
+        System.out.println("Valor final de n2:"+n2);
     }
 
     private static void fibRecursao(int max){
@@ -53,6 +60,10 @@ public class fibo {
             n1 = cont >= 2 ? soma: 1;
             cont++;
             fibRecursao(max);
+        }
+        else{
+            System.out.println("\nValor final de n1:"+n1);
+            System.out.println("Valor final de n2:"+n2);
         }
     }
 
